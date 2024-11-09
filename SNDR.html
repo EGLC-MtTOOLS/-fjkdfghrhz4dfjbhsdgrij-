@@ -14,13 +14,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 400px;
+            max-width: 90%;
+            width: 100%;
             background-color: #fff;
-            padding: 2em;
+            padding: 1.5em;
             border-radius: 20px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
@@ -29,7 +30,7 @@
         h2 {
             margin-bottom: 1.5em;
             color: #444;
-            font-size: 1.8em;
+            font-size: 1.6em;
             font-weight: bold;
         }
 
@@ -39,7 +40,7 @@
 
         .form-group label {
             display: block;
-            font-size: 1.1em;
+            font-size: 1em;
             color: #555;
             margin-bottom: 10px;
             text-align: left;
@@ -52,6 +53,7 @@
             border-radius: 10px;
             font-size: 1em;
             transition: border-color 0.3s;
+            box-sizing: border-box;
         }
 
         .form-group input:focus {
@@ -65,7 +67,7 @@
 
         .result {
             margin-top: 20px;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: bold;
             background: #667eea;
             color: white;
@@ -82,7 +84,7 @@
         }
 
         .toggle-label {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-right: 10px;
         }
 
@@ -130,6 +132,41 @@
 
         .exam-notes {
             display: none;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .form-group label {
+                font-size: 0.9em;
+            }
+
+            .form-group input {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .result {
+                font-size: 1.2em;
+                padding: 8px;
+            }
+
+            .toggle-label {
+                font-size: 1em;
+            }
+
+            .toggle-switch {
+                width: 45px;
+                height: 22px;
+            }
+
+            .slider:before {
+                height: 19px;
+                width: 19px;
+            }
         }
     </style>
 </head>
